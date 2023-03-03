@@ -36,7 +36,7 @@ app = Flask(__name__, static_folder="")
 # @app.route("/")
 @app.route("/", methods=["GET", "POST"])
 def index():
-    cfg = current_app.config["config"]
+    cfg = omegaconf.OmegaConf.load("./config/pross_config.yaml")
     # return f"Hello {cfg.app.username}"
     if request.method == "POST":
         """check the presence of new data if it presesnt then update current data..
