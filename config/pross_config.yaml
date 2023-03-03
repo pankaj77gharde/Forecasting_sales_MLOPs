@@ -1,0 +1,20 @@
+# data
+dataset:
+  raw_data: data_2013_to_2016.csv
+  new_data: 2017_jan_month_data1.csv 
+
+data_ratio:
+  split_test: 0.2
+
+server:
+  host: 0.0.0.0
+  port: 5000
+
+models: [SARIMAX,Prophet]
+
+hyper_param_SRIMAX:
+  p: 1
+  d: 1
+  q: 1
+
+

@@ -1,0 +1,7 @@
+dataset:
+  path: D:\MLOPs_POC\python_files_v2
+  raw_data: data/raw.csv
+  new_data: name of file here
+server:
+  host: 0.0.0.0
+  port: 5000

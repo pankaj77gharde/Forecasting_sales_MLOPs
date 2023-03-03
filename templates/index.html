@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forecast</title>
+</head>
+
+<body>
+    <h1>Enter the number of months to forecast with product name :</h1>
+    <form method="post">
+        <label for="month_count">Enter number of months to forecast (default is 1):</label>
+        <input type="number" name="month_count" value=1  required>
+        <br><br>
+        <label for="product_name">Enter product name :</label>
+        <input type="text" name="product_name" value="sales_1_forecast" value="sales_1_forecast">
+        <br><br>
+        <button type="submit">Forecast</button>
+    </form>
+    {% if request.method == "POST" %}
+    <center>
+    <img src="images\forecast.png" alt="forecast">
+    </center>
+    {% endif %}
+    <br><br>
+    {% if not forecast.empty %} 
+    <table>
+      <tr>
+        {% for column in forecast.columns %}
+        <th>{{ "    " }}</th>
+        <th>{{ column }}</th>
+        {% endfor %}
+      </tr>
+      {% for row in forecast.itertuples() %}
+      <tr>
+        {% for value in row %}
+        <td>{{ value }}</td>
+        <th>{{ "  " }}</th>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </table>
+    {% endif %}
+</body>
+
+</html>

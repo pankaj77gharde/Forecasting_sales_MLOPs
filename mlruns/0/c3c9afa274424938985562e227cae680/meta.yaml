@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/MLOPs_POC/python_files_v4/mlruns/0/c3c9afa274424938985562e227cae680/artifacts
+end_time: 1677838958688
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: c3c9afa274424938985562e227cae680
+run_uuid: c3c9afa274424938985562e227cae680
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677838958119
+status: 3
+tags: []
+user_id: pankaj.gharde
