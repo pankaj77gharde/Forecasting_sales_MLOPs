@@ -34,7 +34,7 @@ LunarCalendar==0.0.9
 Mako==1.2.4
 Markdown==3.4.1
 MarkupSafe==2.1.2
-matplotlib==3.7.0
+matplotlib==3.5.3
 mlflow==2.2.1
 numba==0.56.4
 numpy==1.23.5
