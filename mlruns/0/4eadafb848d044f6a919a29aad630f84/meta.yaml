@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/ds/Forecasting_sales_MLOPs/mlruns/0/4eadafb848d044f6a919a29aad630f84/artifacts
+end_time: 1678083025019
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 4eadafb848d044f6a919a29aad630f84
+run_uuid: 4eadafb848d044f6a919a29aad630f84
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678083024182
+status: 3
+tags: []
+user_id: pankaj.gharde
