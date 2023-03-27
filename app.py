@@ -2,6 +2,7 @@
 data processing, stornig process updated data, model building, best model selection
 and forecasting with api link"""
 import os
+import dvc.api
 import sys
 import matplotlib
 import plotly.graph_objects as go
@@ -10,6 +11,7 @@ import hydra
 from omegaconf import DictConfig, OmegaConf, open_dict
 from hydra import utils
 import omegaconf
+
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -58,8 +60,18 @@ def index():
         if os.path.exists(path_):
             data_df = pd.read_csv(rf"{path_}").iloc[-3:, :]
         else:
-            raw_df_path = rf"./data/raw/{cfg.dataset.raw_data}"
-            raw_df = pd.read_csv(raw_df_path)
+            # raw_df_path = rf"./data/raw/{cfg.dataset.raw_data}"
+            ################################dvc ################
+            raw_df_path = rf"data/raw/{cfg.dataset.raw_data}"
+            path_ = r"data/raw/data_2013_to_2016.csv"
+            with dvc.api.open(
+                repo="https://github.com/pankaj77gharde/Forecasting_sales_MLOPs.git",
+                path=raw_df_path,
+                mode="r",
+            ) as fd:
+                raw_df = pd.read_csv(fd)
+            #################end################################
+            # raw_df = pd.read_csv(raw_df_path)
             pre_pros(raw_df)
             data_df = pd.read_csv(rf"{path_}").iloc[-3:, :]
             data_df = data_df.iloc[-3:, :]
