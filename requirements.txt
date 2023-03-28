@@ -57,12 +57,6 @@ dpath==2.1.4
 dulwich==0.21.3
 dvc==2.10.2
 dvc-data==0.0.2
-dvc-http
-dvc-objects
-dvc-render
-dvc-studio-client
-dvc-task
-dvclive
 entrypoints==0.4
 ephem==4.1.4
 executing==0.8.3
