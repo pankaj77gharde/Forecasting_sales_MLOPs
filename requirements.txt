@@ -105,7 +105,7 @@ jupyter-client==7.3.4
 jupyter-console==6.4.4
 jupyter-core==4.10.0
 jupyter-server==1.21.0
-jupyterlab-pygments==0.2.2
+jupyterlab-pygments
 jupyterlab-widgets==3.0.3
 kaleido==0.2.1
 kiwisolver==1.4.4
