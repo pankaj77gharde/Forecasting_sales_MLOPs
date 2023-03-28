@@ -1,6 +1,6 @@
 """It provides input from user and follow pipe line flow for loading input files,
 data processing, stornig process updated data, model building, best model selection
-and forecasting with api link"""
+and forecasting with api links"""
 import os
 import dvc.api
 import sys
