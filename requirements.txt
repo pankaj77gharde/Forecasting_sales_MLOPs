@@ -221,7 +221,6 @@ sniffio==1.3.0
 soupsieve==2.3.2.post1
 SQLAlchemy==1.4.39
 sqlparse==0.4.2
-sqltrie
 stack-data==0.3.0
 statsmodels==0.13.2
 streamlit==1.19.0
