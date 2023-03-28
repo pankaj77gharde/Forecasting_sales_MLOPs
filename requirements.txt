@@ -206,7 +206,7 @@ ruamel.yaml==0.17.21
 ruamel.yaml.clib==0.2.7
 scikit-learn
 scipy==1.7.3
-scmrepo==0.1.11
+scmrepo
 seaborn==0.12.1
 semver==2.13.0
 Send2Trash==1.8.0
