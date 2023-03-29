@@ -63,7 +63,7 @@ def index():
             # raw_df_path = rf"./data/raw/{cfg.dataset.raw_data}"
             ################################dvc ################
             raw_df_path = rf"data/raw/{cfg.dataset.raw_data}"
-            path_ = r"data/raw/data_2013_to_2016.csv"
+#             path_ = r"data/raw/data_2013_to_2016.csv"
             with dvc.api.open(
                 repo="https://github.com/pankaj77gharde/Forecasting_sales_MLOPs.git",
                 path=raw_df_path,
